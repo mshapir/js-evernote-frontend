@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Evernote</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="sidenav">
+      <button type="button" name="Write Note" id = "new-note-button">Write a Note</button>
+    </div>
+    <div class="info">
+
+    </div>
+    <div class="container" >
+      <form class="new-note-form" action="index.html" method="post">
+        <input type="text" name="title" value="" placeholder="title..."> <br>
+        <textarea name="body" value="" > </textarea> <br>
+        <input type="submit" name="submit" value="make new note">
+      </form>
+    </div>
+    <div class="edit-container">
+      <form class="edit-note-form" action="index.html" method="post">
+        <input class="note-id" type="hidden" name="note" value="">
+        <input id='title-text' type="text" name="title" value=""> <br>
+        <textarea id='body-text'  name="body" value="" > </textarea> <br>
+        <input type="submit" name="submit" value="edit note">
+      </form>
+
+    </div>
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>
